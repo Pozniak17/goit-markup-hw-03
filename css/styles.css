@@ -44,6 +44,12 @@ p {
 
 /* Logo */
 .header-logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  margin-left: 0 auto;
+  margin-right: 93px;
+
   color: #000000;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -62,7 +68,20 @@ p {
 }
 
 /* Навігація в шапці */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -70,6 +89,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--accent);
@@ -80,7 +100,21 @@ p {
   color: var(--accent);
 }
 
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+/* Псевдокласс соседа - даётся только между соседом */
+.contact .item + .item {
+  margin-left: 50px;
+}
+
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -291,9 +325,21 @@ section-title - універсальний клас для h2 */
   background-color: var(--secondary-bg-color);
 }
 
+/* CONTAINER */
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
