@@ -240,7 +240,17 @@ section-title - універсальний клас для h2 */
 /* Стилі для Portfolio.html */
 /* Button */
 
+.filters-section {
+  padding-top: 94px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
 .filters-button {
+  /* display: flex; */
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   cursor: pointer;
@@ -251,6 +261,8 @@ section-title - універсальний клас для h2 */
   line-height: 1.62;
 
   padding: 6px 22px;
+  margin-left: 8px;
+  margin-bottom: 50px;
 }
 .filters-button:hover,
 .filters-button:focus {
