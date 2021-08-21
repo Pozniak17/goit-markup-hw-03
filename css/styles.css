@@ -250,7 +250,7 @@ section-title - універсальний клас для h2 */
 }
 
 .filters-button {
-  /* display: flex; */
+  display: block;
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   cursor: pointer;
@@ -261,9 +261,9 @@ section-title - універсальний клас для h2 */
   line-height: 1.62;
 
   padding: 6px 22px;
-  margin-left: 8px;
   margin-bottom: 50px;
 }
+
 .filters-button:hover,
 .filters-button:focus {
   color: var(--primary-bg-color);
