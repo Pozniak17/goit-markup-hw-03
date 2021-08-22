@@ -48,9 +48,28 @@ img {
   height: auto;
 }
 
+/* CONTAINER */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Logo */
 .page-header {
   border-bottom: 1px solid #ececec;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 .header-logo {
@@ -426,23 +445,4 @@ section-title - універсальний клас для h2 */
 
 .team {
   background-color: var(--secondary-bg-color);
-}
-
-/* CONTAINER */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.header-wrap {
-  display: flex;
-  align-items: center;
-  margin: auto;
 }
