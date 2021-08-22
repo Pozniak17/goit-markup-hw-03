@@ -171,6 +171,19 @@ p {
   padding-bottom: 94px;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -200,6 +213,15 @@ section-title - універсальний клас для h2 */
 
 .example {
   padding-bottom: 94px;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
