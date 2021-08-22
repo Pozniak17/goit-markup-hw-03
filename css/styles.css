@@ -42,6 +42,12 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Logo */
 .header-logo {
   display: block;
@@ -239,6 +245,24 @@ section-title - універсальний клас для h2 */
 .team-text {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  /* flex-wrap: wrap;
+  margin-right: -30px; */
+}
+
+.team-set {
+  width: 270px;
+}
+
+.team-set {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 
 /* Футер */
@@ -264,9 +288,10 @@ section-title - універсальний клас для h2 */
 
 .filters-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.filters {
+.filters-set {
   display: flex;
   justify-content: center;
 }
@@ -294,6 +319,41 @@ section-title - універсальний клас для h2 */
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filters-set .item:not(:last-child) {
+  margin-right: 8px;
+}
+/* project-set */
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.project-set > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.project-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--primary-bg-color);
+  border: 1px solid #eeeeee;
+}
+
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
 .project-link {
   text-decoration: none;
 }
@@ -303,12 +363,17 @@ section-title - універсальний клас для h2 */
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .project-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 /* Footer address */
