@@ -49,6 +49,10 @@ img {
 }
 
 /* Logo */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-logo {
   display: block;
   padding-top: 25px;
