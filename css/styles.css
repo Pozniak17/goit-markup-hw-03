@@ -69,14 +69,12 @@ img {
 .header-wrap {
   display: flex;
   align-items: center;
-  margin: auto;
 }
 
 .header-logo {
   display: block;
   padding-top: 25px;
   padding-bottom: 24px;
-  margin-left: 0 auto;
   margin-right: 93px;
 
   color: #000000;
@@ -99,7 +97,6 @@ img {
 /* Навігація в шапці */
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -195,7 +192,7 @@ img {
   text-align: center;
 }
 /* Features */
-.features {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -241,7 +238,7 @@ section-title - універсальний клас для h2 */
 }
 
 .example {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .example-list {
@@ -254,8 +251,7 @@ section-title - універсальний клас для h2 */
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--secondary-bg-color);
 }
 
 .team-title {
@@ -303,6 +299,10 @@ section-title - універсальний клас для h2 */
   color: var(--accent);
 }
 
+.footer-contact {
+  margin-top: 20px;
+}
+
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -322,14 +322,10 @@ section-title - універсальний клас для h2 */
   overflow: hidden;
 }
 
-.filters-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filters-set {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filters-button {
@@ -344,7 +340,6 @@ section-title - універсальний клас для h2 */
   line-height: 1.62;
 
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 
 .filters-button:hover,
@@ -374,6 +369,8 @@ section-title - універсальний клас для h2 */
 }
 
 .project-container {
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--primary-bg-color);
@@ -399,17 +396,17 @@ section-title - універсальний клас для h2 */
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 4px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .project-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  /* margin-bottom: 20px;
+  margin-left: 24px; */
 }
 
 /* Footer address */
@@ -425,7 +422,6 @@ section-title - універсальний клас для h2 */
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 20px;
   display: block;
 }
 .footer-address:hover,
@@ -454,8 +450,4 @@ section-title - універсальний клас для h2 */
 }
 .works {
   background-color: #f5f4fa;
-}
-
-.team {
-  background-color: var(--secondary-bg-color);
 }
